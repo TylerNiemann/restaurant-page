@@ -2,7 +2,7 @@ import {initial} from './initial';
 import {loadMenu} from './menu';
 import {home} from './home';
 import {about} from './about';
-import { contact } from './contact';
+
 
 const init =(() =>{
 document.addEventListener('DOMContentLoaded', initial)
