@@ -1,5 +1,5 @@
 import {initial} from './initial';
-import {menu} from './menu';
+import {loadMenu} from './menu';
 import {home} from './home';
 import {about} from './about';
 import { contact } from './contact';
@@ -16,7 +16,7 @@ const switchTab = (() => {
     
     document.addEventListener('DOMContentLoaded', function(){ 
         const btnMenu = document.querySelector('#btnMenu');
-        btnMenu.addEventListener('click', menu);
+        btnMenu.addEventListener('click', loadMenu);
     }); 
 
     document.addEventListener('DOMContentLoaded', function(){ 
