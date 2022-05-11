@@ -1,18 +1,32 @@
 import {initial} from './initial';
 import {menu} from './menu';
 import {home} from './home';
+import {about} from './about';
+import { contact } from './contact';
 
 const init =(() =>{
 document.addEventListener('DOMContentLoaded', initial)
-
-const body = document.querySelector('body');
-const btnHome = document.createElement('button');
-const btnOut = document.createElement('button');
-btnHome.textContent = 'Home';
-btnOut.textContent = 'Menu';
-body.appendChild(btnHome);
-body.appendChild(btnOut);
-
-btnHome.addEventListener('click', home)
-btnOut.addEventListener('click',menu)
 }) ();
+
+const switchTab = (() => {
+    document.addEventListener('DOMContentLoaded', function(){
+        const btnHome = document.querySelector('#btnHome');
+        btnHome.addEventListener('click', home);
+    });
+    
+    document.addEventListener('DOMContentLoaded', function(){ 
+        const btnMenu = document.querySelector('#btnMenu');
+        btnMenu.addEventListener('click', menu);
+    }); 
+
+    document.addEventListener('DOMContentLoaded', function(){ 
+        const btnAbout= document.querySelector('#btnAbout');
+        btnAbout.addEventListener('click', about);
+    }); 
+
+    document.addEventListener('DOMContentLoaded', function(){ 
+        const btnContact = document.querySelector('#btnContact');
+        btnContact.addEventListener('click', contact);
+    }); 
+
+})();

@@ -1,9 +1,9 @@
-const menu = () => {
+const contact = () => {
     const body = document.querySelector('.main');
     body.innerHTML = "";
     const welcome = document.createElement('h1') 
-    welcome.textContent = 'GOOD FOOD HERE';  
+    welcome.textContent = 'GOOD LOCATION HERE';  
     body.appendChild(welcome);
 }
 
-export {menu};
+export {contact};

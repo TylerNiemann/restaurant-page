@@ -1,5 +1,5 @@
 const home = () => {
-    const body = document.querySelector('#content');
+    const body = document.querySelector('.main');
     body.innerHTML = "";
     const welcome = document.createElement('h1')
     welcome.textContent = 'WELCOME!';
