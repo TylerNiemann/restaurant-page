@@ -26,3 +26,9 @@ body{
     display: flex;
     gap: 10px;
 }
+.navBar :hover{
+    color: black;
+}
+.menu{
+    display: grid;
+}
