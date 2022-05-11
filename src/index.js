@@ -24,9 +24,4 @@ const switchTab = (() => {
         btnAbout.addEventListener('click', about);
     }); 
 
-    document.addEventListener('DOMContentLoaded', function(){ 
-        const btnContact = document.querySelector('#btnContact');
-        btnContact.addEventListener('click', contact);
-    }); 
-
 })();

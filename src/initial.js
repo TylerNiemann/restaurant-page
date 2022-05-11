@@ -18,10 +18,21 @@ const initial = () => {
     main.setAttribute('class','main');
     content.appendChild(main);
 
-    const welcome = document.createElement('h1')
-    welcome.textContent = 'WELCOME!';
-    main.appendChild(welcome); 
+    const mainContent = document.createElement('div');
+    mainContent.setAttribute('class','mainContent');
+    main.appendChild(mainContent);
 
+    const welcome = document.createElement('h1')
+    welcome.textContent = 'Welcome to the Burger Place!';
+    mainContent.appendChild(welcome); 
+
+    const title= document.createElement('span')
+    title.textContent = 'We have the best Burgers!';
+    mainContent.appendChild(title); 
+
+    const words = document.createElement('p')
+    words.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quos voluptas illum tenetur culpa tempore facilis at debitis doloribus, ducimus laudantium praesentium et aut rem ea labore maxime molestiae ipsum repellendus ullam! Similique, ut quo.';
+    mainContent.appendChild(words); 
 
     const btnMenu = document.createElement('button');
     btnMenu.setAttribute('id','btnMenu');
@@ -30,15 +41,10 @@ const initial = () => {
     const btnAbout = document.createElement('button');
     btnAbout.setAttribute('id','btnAbout');
     btnAbout.textContent = 'About';
-
-    const btnContact = document.createElement('button');
-    btnContact.setAttribute('id','btnContact');
-    btnContact.textContent = 'Contact';
     
     navBarRight.appendChild(btnMenu);
     navBarRight.appendChild(btnAbout);
-    navBarRight.appendChild(btnContact);
-   
+    
 }
 
 export {initial};
