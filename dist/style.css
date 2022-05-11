@@ -48,6 +48,7 @@ body{
     margin-top: 20px;
     margin-left: 30px;
     grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
 }
 .menu-item{
     width: 300px;
